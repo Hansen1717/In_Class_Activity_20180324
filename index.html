@@ -9,7 +9,20 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+    var config = {
+    apiKey: "AIzaSyC2g_40ujvx0LAdcXCkDRqLzgoL1dW7neU",
+    authDomain: "in-class-activity-20180324.firebaseapp.com",
+    databaseURL: "https://in-class-activity-20180324.firebaseio.com",
+    projectId: "in-class-activity-20180324",
+    storageBucket: "",
+    messagingSenderId: "749770368853"
+};
+firebase.initializeApp(config);
+    </script>
+    <script src="assets/javascript/main.js"></script>
 </head>
 
 <body>
@@ -75,7 +88,7 @@
                         <label for="monthly-rate">Monthly Rate</label>
                         <input id="monthly-rate" class="form-control" type="text">
                     </div>
-                    <button id="add-employee" class="btn-lg btn-primary">Add Employee</button>
+                    <input type="submit" id="add-employee" class="btn-lg btn-primary"></input>
                 </form>
             </div>
 
